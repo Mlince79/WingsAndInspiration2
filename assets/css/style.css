@@ -19,4 +19,9 @@
 
 .navbar-light .navbar-brand {
     color: rgba(224, 126, 203, 0.9);
+    font-weight: 60%;
+}
+
+.bg-light {
+    background-color: white;
 }
