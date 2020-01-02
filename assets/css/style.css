@@ -18,10 +18,18 @@
 }
 
 .navbar-light .navbar-brand {
-    color: rgba(224, 126, 203, 0.9);
-    font-weight: 60%;
+    color: rgba(240, 118, 213, 0.9);git s
+    font-size: 30px;
 }
 
-.bg-light {
-    background-color: white;
+.callout-container {
+    height: 90vh;
+    background: url(https://raw.githubusercontent.com/Mlince79/WingsAndInspiration2/master/assets/images/FONDO%20PRIMERA%20PAGINA.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
