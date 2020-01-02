@@ -1,12 +1,18 @@
-@import url('https://fonts.googleapis.com/css?family=Sunflower:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,500&display=swap');
+
 
 .navbar-brand {
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
-.mr-5,
-.mx-5 {
-    margin-right: 0rem!important;
+.navbar-light .navbar-brand {
+    color: rgba(199, 99, 177, 0.9);
+    font-size: 30px;
+    font-weight: 500;
+
+}
+
+.navbar-light .navbar-brand:hover {color: rgba(158, 27, 158, 0.9);
 }
 
 .container-fluid {
@@ -17,19 +23,30 @@
     margin-left: auto;
 }
 
-.navbar-light .navbar-brand {
-    color: rgba(240, 118, 213, 0.9);git s
-    font-size: 25px;
-}
-
 .callout-container {
-    height: 90vh;
-    background: url(https://raw.githubusercontent.com/Mlince79/WingsAndInspiration2/master/assets/images/fondo_primera_pagina.png);
+    height: 75vh;
+    background: url(https://raw.githubusercontent.com/Mlince79/WingsAndInspiration2/master/assets/images/denisse_olsson_index.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
+    position: static;
 }
+
+.static {
+    font-family: 'Oswald', sans-serif;
+    font-size: 46px;
+    font-weight: 300;
+    color: rgba(199, 99, 177, 0.9);
+    width: 800px;
+}
+
+#message {
+    font-family: 'Oswald', sans-serif;
+    font-size: 46px;
+    font-weight: 300;
+    color: rgba(199, 99, 177, 0.9);
+}
+

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>Women Coaching Denisse Olson Sweden</title>
 </head>
 <body>
@@ -33,9 +34,34 @@
     <div id="hero">
         <div class= "callout-container">
             <div class= "row">
-                <div class= "col-12">
-                    <p>All the answers to our questions are deep inside us.</p>
-                    <p>Are you ready to listen to the guidance of your heart?</p>
+                <div class= "col-6">
+                    <p class="static">Look inside yourself and</p>
+                </div>
+                <div class="col-6">
+                    <p id="message"></p>
+                    <script type="text/javascript">
+                    $(document).ready(function() {
+
+                    var count = 0
+                    function nextMsg() {
+                    if (messages.length == 0 ) {
+                    } else {
+                    count =  count < messages.length ? count + 1 : 0
+                    $('#message').html(messages[count]).fadeIn(2000).delay(1000).fadeOut(2000,nextMsg);
+                    }
+                    };
+
+                    var messages = [
+                        "awake to new possibilities",
+                        "transform the way you perceive your capabilities",
+                        "transcend your ordinary experiences and limitations",
+                        "push yourself from apathy to possibility"
+                    ].reverse();
+
+                    $('#message').hide();
+                    nextMsg();
+                    });
+                    </script>
                 </div>
             </div>
         </div>
@@ -99,8 +125,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</body>
-</html>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </body>
 </html>
