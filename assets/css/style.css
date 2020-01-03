@@ -28,11 +28,7 @@
     background: url(https://raw.githubusercontent.com/Mlince79/WingsAndInspiration2/master/assets/images/denisse_olsson_index.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: static;
+    background-position: auto;
 }
 
 .static {
@@ -40,7 +36,7 @@
     font-size: 46px;
     font-weight: 300;
     color: rgba(199, 99, 177, 0.9);
-    width: 800px;
+    position: absolute;
 }
 
 #message {

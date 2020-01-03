@@ -35,20 +35,19 @@
         <div class= "callout-container">
             <div class= "row">
                 <div class= "col-6">
-                    <p class="static">Look inside yourself and</p>
+                    <section class="callout jumbotron text center">
+                        <p class="static">Look inside yourself and</p>
+                    </section>
                 </div>
                 <div class="col-6">
                     <p id="message"></p>
                     <script type="text/javascript">
                     $(document).ready(function() {
-
-                    var count = 0
+                    var i = 0;
                     function nextMsg() {
-                    if (messages.length == 0 ) {
-                    } else {
-                    count =  count < messages.length ? count + 1 : 0
-                    $('#message').html(messages[count]).fadeIn(2000).delay(1000).fadeOut(2000,nextMsg);
-                    }
+                        data = i % messages.length;
+                    $('#message').html(messages[data]).fadeIn(2000).delay(1000).fadeOut(2000,nextMsg);
+                        i++;
                     };
 
                     var messages = [
