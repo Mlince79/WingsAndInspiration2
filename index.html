@@ -11,6 +11,12 @@
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>Women Coaching Denisse Olson Sweden</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("user_DW6OL32rF4zjjcqn5NAVG");
+        })();
+    </script>
 </head>
 <body>
     <header id= "header" class="header">
@@ -18,12 +24,12 @@
             <div class= "row">
                 <div class= "col-12">
                     <nav class="navbar navbar-light">
-                        <div class="container-fluid col-10">
-                            <a class="navbar-brand mr-5 font-weight-bold pt-5" href="#">HOME</a>
-                            <a class="navbar-brand mr-5 font-weight-bold pt-5" href="#">ABOUT ME</a>
-                            <a class="navbar-brand mr-5 font-weight-bold pt-5" href="#">MY COACHING</a>
-                            <a class="navbar-brand mr-5 font-weight-bold pt-5" href="#">BLOG</a>
-                            <a class="navbar-brand mr-5 font-weight-bold pt-5" href="#">EVENTS</a>
+                        <div class="container-fluid col-8">
+                            <a class="navbar-brand mr-4 font-weight-bold pt-5" href="#">HOME</a>
+                            <a class="navbar-brand mr-4 font-weight-bold pt-5" href="#">ABOUT ME</a>
+                            <a class="navbar-brand mr-4 font-weight-bold pt-5" href="#">MY COACHING</a>
+                            <a class="navbar-brand mr-4 font-weight-bold pt-5" href="#">BLOG</a>
+                            <a class="navbar-brand mr-4 font-weight-bold pt-5" href="#">EVENTS</a>
                         </div>
                     </nav>
                 </div>
@@ -34,12 +40,12 @@
     <div id="hero">
         <div class= "callout-container">
             <div class= "row">
-                <div class= "col-6">
+                <div class= "col-4">
                     <section class="callout text center">
                         <p class="static">Look inside yourself and</p>
                     </section>
                 </div>
-                <div class="col-6">
+                <div class="col-8">
                     <p id="message"></p>
                     <script type="text/javascript">
                     $(document).ready(function() {
@@ -66,9 +72,11 @@
         </div>
     </div>
     <footer>
-        <div class= "container">
+        <div class= "container-fluid">
             <div class= "row">
-                <button class="btn btn-lg btn-cta btn--pink" data-toggle="modal" data-target="#signUpModal">SING UP FOR YOUR 30 MIN FREE SESSION</button>
+                <div class="col text-center">
+                    <button class="btn btn-lg btn-cta btn--pink" data-toggle="modal" data-target="#signUpModal">SING UP FOR YOUR 30 MIN FREE SESSION</button>
+                </div>
             </div>
         </div>
             <div class="col">
@@ -105,8 +113,10 @@
                 </button>
                 </div>
             <div class="modal-body">
-            <form>
+            <form onsubmit="return sendMail(this)" method="POST">
                 <div class="form-group">
+                <label for="exampleInputName">Name</label>
+                <input type="name" class="form-control" id="exampleInputName" aria-describedby="namwHelp" placeholder="Enter name">
                 <label for="exampleInputEmail1">Email address</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
@@ -115,12 +125,13 @@
                 <label for="text">Tell me a little bit about you.</label>
                 <input type="text" class="form-control" id="Text" placeholder="Text">
             </div>
-            <button type="submit" class="btn btn-cta btn--red">Submit</button>
+            <button type="submit" class="btn btn-cta btn--pink">Submit</button>
             </form>
             </div>
             </div>
         </div>
     </div>
+    <script src="assets/js/sendMail.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

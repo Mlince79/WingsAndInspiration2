@@ -12,7 +12,7 @@
 
 }
 
-.navbar-light .navbar-brand:hover {color: rgba(158, 27, 158, 0.9);
+.navbar-light .navbar-brand:hover {color: rgba(101, 14, 172, 0.9);
 }
 
 .container-fluid {
@@ -25,10 +25,14 @@
 
 .callout-container {
     height: 75vh;
-    background: url(https://raw.githubusercontent.com/Mlince79/WingsAndInspiration2/master/assets/images/denisse_olsson_index.jpg);
+    background: url(https://raw.githubusercontent.com/Mlince79/WingsAndInspiration2/master/assets/images/logo_denisse_olsson_index.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: auto;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
 .static {
@@ -36,9 +40,9 @@
     font-size: 46px;
     font-weight: 300;
     color: rgba(199, 99, 177, 0.9);
-    margin-top: 300px;
-    margin-left: 300px;
-    position: absolute;
+    width: 800px;
+    margin-right: 170px;
+    margin-top: 100px;
 }
 
 #message {
@@ -46,5 +50,27 @@
     font-size: 46px;
     font-weight: 300;
     color: rgba(199, 99, 177, 0.9);
+    width: 700px;
+    position: absolute;
+    margin-left: 225px;
+    margin-top: 100px;
+    word-wrap: break-word;
 }
 
+.btn-cta {
+    font-weight: bold;
+    border-radius: 23px;
+    width: 450px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.btn--pink {
+    color:white;
+    background-color: rgba(199, 99, 177, 0.9);
+}
+
+.btn--pink:hover {
+    background-color: rgba(101, 14, 172, 0.9);
+    color: white;
+}
