@@ -5,10 +5,10 @@
 }
 
 .logo {
-    height: 25vh;
-    background: url(https://raw.githubusercontent.com/Mlince79/WingsAndInspiration2/master/assets/images/logo_wings_horizontal.png);
+    height: 10vh;
+    background: url(https://raw.githubusercontent.com/Mlince79/WingsAndInspiration2/master/assets/images/logo_horizontal.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
 }
 
@@ -19,11 +19,10 @@
 .navbar-light .navbar-nav .nav-link {
     color: rgba(199, 99, 177, 0.9);
     font-size: 30px;
-    font-weight: 500;
-
 }
 
-.navbar-light .navbar-brand:hover {color: rgba(101, 14, 172, 0.9);
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgba(101, 14, 172, 0.9);
 }
 
 .navbar {
@@ -143,4 +142,8 @@ footer {
     background-color: rgba(199, 99, 177, 0.9);
 }
 
-@media only screen and (max-width: 300px) 
+@media (max-width: 1199.98px) {
+   .d-sm-none {
+       display: none;
+        }
+}
