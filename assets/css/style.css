@@ -1,11 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:300,500&display=swap');
 
+.brand-header  {
+    width: 100%;
+}
+
+.logo {
+    height: 25vh;
+    background: url(https://raw.githubusercontent.com/Mlince79/WingsAndInspiration2/master/assets/images/logo_wings_horizontal.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
 .navbar-brand {
     font-family: 'Oswald', sans-serif;
 }
 
-.navbar-light .navbar-brand {
+.navbar-light .navbar-nav .nav-link {
     color: rgba(199, 99, 177, 0.9);
     font-size: 30px;
     font-weight: 500;
@@ -13,6 +24,22 @@
 }
 
 .navbar-light .navbar-brand:hover {color: rgba(101, 14, 172, 0.9);
+}
+
+.navbar {
+    margin-left: 0;
+    border: 0;
+    font-size: 20px;
+    width: 100%;
+    padding: 0;
+}
+
+.navbar .navbar-toggler {
+    border: 1px solid transparent;
+}
+
+.justify-content-center {
+    padding-top: 40px;
 }
 
 .container-fluid {
@@ -91,3 +118,29 @@
     position: inherit;
     text-align: center;
 }
+
+footer {
+    font-family: 'Oswald', sans-serif;
+    color:rgba(199, 99, 177, 0.9);
+    text-align: right;
+    padding-right: 10px;
+}
+
+.social-links li a i {
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    border-radius: 60%;
+    font-size: 13px;
+    line-height: 7px;
+    text-align: center;
+    color:white;
+    background:rgba(101, 14, 172, 0.9);
+    transition: all 0.35s ease-in-out;
+}
+
+.social-links li a i:hover {
+    background-color: rgba(199, 99, 177, 0.9);
+}
+
+@media only screen and (max-width: 300px) 
