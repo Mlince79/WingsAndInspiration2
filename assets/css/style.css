@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:300,500&display=swap');
 
 /*-----------------------------------------------------------------------navbar*/
+
 .brand-header  {
     width: 100%;
 }
@@ -50,6 +51,12 @@ img {
     padding-top: 40px;
 }
 
+.img-fluid {
+    background: url(https://raw.githubusercontent.com/Mlince79/WingsAndInspiration2/master/assets/images/fondo_superior.png);
+    max-width: 100%;
+    height: auto;
+}
+
 /*-----------------------------------------------------------------------callout*/
 .col {
     max-width: 60%;
@@ -90,7 +97,7 @@ img {
 /*-----------------------------------------------------------------------modal*/
 
 .btn-cta {
-    font-weight: bold;
+    font-weight: 400px;
     border-radius: 23px;
     width: 450px;
     margin-top: 20px;
@@ -150,9 +157,41 @@ footer {
 }
 
 .list-inline {
-    padding-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     position: inherit;
 }
+
+.general-sub {
+    padding-top: 10px;
+}
+
+/*-----------------------------------------------------------------------myCoaching*/
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    color: rgba(199, 99, 177, 0.9);
+}
+
+.col-md-4 {
+    padding-left: 70px;
+    padding-right: 50px;
+    padding-top: 50px;
+}
+
+p {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    padding-top: 50px;
+}
+
+i {
+    text-align: center;
+}
+/*-----------------------------------------------------------------------responsive*/
 
 @media (min-width: 992px) {
     img {
@@ -165,6 +204,13 @@ footer {
     .navbar-brand {
         width: 100%;
     }
+}
+
+@media (min-width: 700px) {
+    img {
+        display: none;
+        width: 100%;
+        }
 }
 
 @media only screen and (max-width: 600px) {
@@ -189,5 +235,8 @@ footer {
     .navbar-light .navbar-nav .nav-link {
         font-size: 20px;
     }
+    .navbar {
+        width: 70%;
+        }
 }
 
