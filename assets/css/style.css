@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:300,500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap');
+
 
 /*-----------------------------------------------------------------------navbar*/
 
@@ -47,7 +49,7 @@ img {
     border: 1px solid transparent;
 }
 
-.justify-content-center {
+.nav {
     padding-top: 40px;
 }
 
@@ -167,30 +169,28 @@ footer {
 }
 
 /*-----------------------------------------------------------------------myCoaching*/
+section {
+    font-family: 'Roboto', sans-serif;
+}
+
+h2, h4 {
+    font-size: 26px; 
+    font-weight: 400;
+    color: rgba(101, 14, 172, 0.9);
+}
 
 h2 {
-    font-family: 'Oswald', sans-serif;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 100px;
-    color: rgba(199, 99, 177, 0.9);
-}
-
-.col-md-4 {
-    padding-left: 70px;
-    padding-right: 50px;
-    padding-top: 50px;
-}
-
-p {
-    font-family: 'Oswald', sans-serif;
-    font-weight: 300;
     padding-top: 50px;
 }
 
 i {
-    text-align: center;
+    color: rgba(101, 14, 172, 0.9);
 }
+
+.mr-5 {
+    margin-right: 12rem!important;
+}
+
 /*-----------------------------------------------------------------------responsive*/
 
 @media (min-width: 992px) {
