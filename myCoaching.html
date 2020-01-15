@@ -27,7 +27,7 @@
 <body>
 	<header id="header" class="header img-fluid">
 		<nav class="navbar navbar-light navbar-expand-sm no-gutters">
-			<a class="navbar-brand not_visible" href="#">
+			<a class="navbar-brand not_visible" href="/index.html">
 				<img src="assets/images/logo_horizontal.png" alt="wingsandinspirationLogo">
             </a>
 				<button class="navbar-toggler ml-auto collapsed" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,9 +36,9 @@
 				<div class="nav justify-content-center navbar-collapse collapse" id="navbarNavDropdown">
 					<ul class="navbar-nav text-center">
 						<li class="nav-item hidden-sm-down"><a class="mr-4 font-weight-bold pt-1 nav-link"
-								href="#">HOME</a></li>
+								href="/index.html">HOME</a></li>
 						<li class="nav-item"><a class="mr-4 font-weight-bold pt-1 nav-link" href="#">ABOUT ME</a></li>
-						<li class="nav-item"><a class="mr-4 font-weight-bold pt-1 nav-link" href="#">MY COACHING</a>
+						<li class="nav-item"><a class="mr-4 font-weight-bold pt-1 nav-link" href="/myCoaching.html">MY COACHING</a>
 						</li>
 						<li class="nav-item"><a class="mr-4 font-weight-bold pt-1 nav-link" href="#">BLOG</a></li>
 						<li class="nav-item"><a class="mr-4 font-weight-bold pt-1 nav-link" href="#">EVENTS</a></li>
@@ -46,37 +46,51 @@
 				</div>
 		</nav>
 	</header>
-    <main>
-        <div class="container-fluid ">
-            <section id="Introduction" class="text-center">
-                <h2 class=" mb-3 text-uppercase font-weight-normal">How does it works?</h2>
+    <main class="mt-5">
+        <div class="container">
+            <section id="myCoaching" class="text-center">
+                <h2 class=" mb-5 text-uppercase font-weight-bold">How does it work?</h2>
                 <div class="row d-flex justify-content-center mb-4">
                     <div class="col-md-8">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo soluta quae officia aspernatur nihil adipisci. Nostrum, beatae nobis, incidunt aliquid unde alias deleniti eligendi accusamus amet, modi nulla laborum architecto!</p>
+                        <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo soluta quae officia aspernatur nihil adipisci. Nostrum, beatae nobis, incidunt aliquid unde alias deleniti eligendi accusamus amet, modi nulla laborum architecto!</p>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-4 mb-1">
-                        <i class="far fa-calendar-check fa-3x"></i>
+                    <div class="col-md-4 mb-5">
+                        <h3 class="my-4 text-uppercase font-weight-bold">1</h3>
                         <h4 class="my-4 text-uppercase font-weight-normal">Book a meeting</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima
+                        <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima
                             assumenda deleniti hic.</p>
+                        <i class="far fa-calendar-check fa-3x"></i>
                     </div>
                     <div class="col-md-4 mb-1">
-                        <i class="far fa-heart fa-3x mr-5"></i>
-                        <h4 class="my-4 text-uppercase font-weight-normal">We bring up the inspiration</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima
+                        <h3 class="my-4 text-uppercase font-weight-bold">2</h3>
+                        <h4 class="my-4 text-uppercase font-weight-normal">Bring up the inspiration</h4>
+                        <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima
                             assumenda deleniti hic.</p>
+                        <i class="fab fa-gratipay fa-3x"></i>
                     </div>
                     <div class="col-md-4 mb-1">
+                        <h3 class="my-4 text-uppercase font-weight-bold">3</h3>
+                        <h4 class="my-4 text-uppercase font-weight-normal">You get your wings</h4>
+                        <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima
+                            assumenda deleniti hic.</p>
                         <i class="fas fa-feather-alt fa-3x"></i>
-                        <h4 class="my-4 text-uppercase font-weight-normal">Your get your wings</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima
-                            assumenda deleniti hic.</p>
                     </div>
                 </div>
-            </section> <!----https://www.youtube.com/watch?v=F5lhPZJGycs-->
-        </div>
+            </section><!---https://mdbootstrap.com/education/bootstrap/landing-page-lesson-4/-->
+            <!--</section> <--https://www.youtube.com/watch?v=F5lhPZJGycs-->
+           <section id="quiz" class="text-center">
+                <h3 class=" mb-5 font-weight-normal">If you are reading this, you might be wondering if you would benefit from getting some help.</h3>
+                <h3 class=" mb-5 font-weight-normal">Here are some questions that might help you to check on you.</h3>
+                <div class="mb-5">
+                <a class="quiz" href="/myCoaching_quiz.html"><button onclick = "start();" type="button" class="btn btn-info btn-rounded btn-lg">Click here </button></a>
+                </div>    
+                    <div id = "after_click">
+                    <div class="quiz-container">
+                    </div>
+            </section>
+        </div> 
     </main>
 	<footer>
         <div class="container-fluid text-center img-fluid">
@@ -165,5 +179,6 @@
 		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
 	</script>
 	<script src="assets/js/sendEmail.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
