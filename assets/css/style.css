@@ -57,6 +57,9 @@ img {
     background: url(https://raw.githubusercontent.com/Mlince79/WingsAndInspiration2/master/assets/images/fondo_superior.png);
     max-width: 100%;
     height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 /*-----------------------------------------------------------------------callout*/
@@ -176,16 +179,19 @@ h2 {
     font-size: 30px; 
     font-weight: 400;
     color: rgba(101, 14, 172, 0.9);
+    padding-top: 50px;
 }
-h3, h4 {
+h4 {
     font-size: 26px; 
     font-weight: 400;
     color: rgba(101, 14, 172, 0.9);
 }
 
-h2 {
-    padding-top: 50px;
-    f
+h3 {
+    font-size: 24px; 
+    font-weight: 300;
+    color: rgba(101, 14, 172, 0.9);
+    margin: 0px;
 }
 
 i {
@@ -242,79 +248,74 @@ padding-left: 10px;
     margin-top: 20px;
 }
 /*-----------------------------------------------------------------------startQuiz*/
-
-.jumbotron{
-    font-size: 20px;
-    font-family: 'Roboto', sans-serif;
-    color: rgba(101, 14, 172, 0.9);
-    font-weight: 300;
-    text-align: center;
-    background-color: rgba(243, 213, 237, 0.9);
-    display: inline;
-    width: 50%;
-}
-
-.container {
-    margin-top: 10px;
+main{
+    height: 80vh;
+    background: url(https://raw.githubusercontent.com/Mlince79/WingsAndInspiration2/master/assets/images/logo_denisse_olsson_index.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
 h1{
-  font-weight: 400;
-  margin: 0px;
-  padding: 10px;
-  font-size: 36px;
-  color: rgba(101, 14, 172, 0.9);
-  background-color: rgba(228, 194, 243, 0.9);
+    font-weight: 400;
+    margin: 0px;
+    padding: 100px;
+    font-size: 36px;
+    color: rgba(101, 14, 172, 0.9);
+    font-family: 'Roboto', sans-serif;
 }
-
 .question{
-  font-size: 30px;
-  margin-top: 15px;
-  margin-bottom: 15px;
+    font-size: 30px;
+    margin-top: 15px;
+    font-family: 'Roboto', sans-serif;
 }
 .answers {
-  margin-bottom: 20px;
-  text-align: left;
-  display: inline-block;
+    margin-bottom: 20px;
+    text-align: left;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
 }
 .answers label{
-  display: block;
-  margin-bottom: 10px;
+    display: block;
+    margin-bottom: 10px;
 }
-button{
+.btn-lilla2{
     font-family: 'Roboto', sans-serif;
     font-size: 22px;
     background-color: rgba(101, 14, 172, 0.9);
     color: #fff;
     border: 0px;
-    padding: 20px;
+    padding: 10px;
     cursor: pointer;
     margin-bottom: 20px;
     font-weight: 400px;
     border-radius: 23px;
-    margin-top: 20px;
+    margin-top: 110px;
 }
-button:hover{
+.btn-lilla2:hover{
     background-color: rgba(199, 99, 177, 0.9);
 }
-
 .slide{
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  z-index: 1;
-  opacity: 0;
-  transition: opacity 0.5s;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s;
 }
 .active-slide{
-  opacity: 1;
-  z-index: 2;
+    opacity: 1;
+    z-index: 2;
 }
 .quiz-container{
-  position: relative;
-  height: 200px;
-  margin-top: 40px;
+    position: relative;
+    height: 200px;
+    margin-top: 40px;
 }
 /*-----------------------------------------------------------------------responsive*/
 
