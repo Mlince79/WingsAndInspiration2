@@ -141,7 +141,6 @@ footer {
     font-family: 'Oswald', sans-serif;
     color:rgba(199, 99, 177, 0.9);
     text-align: right;
-    padding-right: 10px;
 }
 
 .social-links li a i {
@@ -248,7 +247,7 @@ padding-left: 10px;
     margin-top: 20px;
 }
 /*-----------------------------------------------------------------------startQuiz*/
-main{
+.quiz-photo{
     height: 80vh;
     background: url(https://raw.githubusercontent.com/Mlince79/WingsAndInspiration2/master/assets/images/favpng_butterfly-watercolor-painting-illustration_ywinebux.png);/*----https://favpng.com/---*/
     background-repeat: no-repeat;
@@ -267,20 +266,21 @@ main{
 h1{
     font-weight: 400;
     margin: 0px;
-    font-size: 36px;
+    font-size: 46px;
     color: rgba(101, 14, 172, 0.9);
     font-family: 'Roboto', sans-serif;
 }
 .question{
-    font-size: 30px;
     margin-top: 15px;
     font-family: 'Roboto', sans-serif;
+    font-size: 26px;
 }
 .answers {
     margin-bottom: 20px;
     text-align: left;
     display: inline-block;
     font-family: 'Roboto', sans-serif;
+    font-size: 24px;
 }
 .answers label{
     display: block;
@@ -297,7 +297,7 @@ h1{
     margin-bottom: 20px;
     font-weight: 400px;
     border-radius: 23px;
-    margin-top: 110px;
+    margin-top: 40px;
 }
 .btn-lilla2:hover{
     background-color: rgba(199, 99, 177, 0.9);
@@ -319,6 +319,8 @@ h1{
     position: relative;
     height: 200px;
     margin-top: 40px;
+    width: 400px;
+    margin-left: 50px;
 }
 /*-----------------------------------------------------------------------responsive*/
 
@@ -367,5 +369,8 @@ h1{
     .navbar {
         width: 100%;
         }
+    .quiz-photo {
+        background: none;
+    }
 }
 

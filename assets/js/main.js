@@ -72,8 +72,8 @@
         // add this question and its answers to the output
         output.push(
           `<div class="slide">
-             <div class="mb-5 question"> ${currentQuestion.question} </div>
-             <div class="mb-5 answers"> ${answers.join("")} </div>
+             <div class="mb-3 question"> ${currentQuestion.question} </div>
+             <div class="mb-3 answers"> ${answers.join("")} </div>
            </div>`
         );
       });
