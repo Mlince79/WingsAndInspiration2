@@ -251,7 +251,7 @@ padding-left: 10px;
     height: 80vh;
     background: url(https://raw.githubusercontent.com/Mlince79/WingsAndInspiration2/master/assets/images/favpng_butterfly-watercolor-painting-illustration_ywinebux.png);/*----https://favpng.com/---*/
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: inherit;
     background-position: center;
     display: flex;
     align-items: center;
@@ -271,16 +271,15 @@ h1{
     font-family: 'Roboto', sans-serif;
 }
 .question{
-    margin-top: 15px;
     font-family: 'Roboto', sans-serif;
     font-size: 26px;
 }
 .answers {
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     text-align: left;
     display: inline-block;
     font-family: 'Roboto', sans-serif;
-    font-size: 24px;
+    font-size: 16px;
 }
 .answers label{
     display: block;
@@ -297,7 +296,6 @@ h1{
     margin-bottom: 20px;
     font-weight: 400px;
     border-radius: 23px;
-    margin-top: 40px;
 }
 .btn-lilla2:hover{
     background-color: rgba(199, 99, 177, 0.9);
@@ -320,7 +318,24 @@ h1{
     height: 200px;
     margin-top: 40px;
     width: 400px;
-    margin-left: 50px;
+    margin-left: 72px;
+}
+#results {
+    font-weight: 400;
+    font-size: 26px;
+    background-color: rgba(243, 232, 241, 0.9);
+    display: block;
+    position: absolute;
+}
+.anxiety {
+    color: rgba(101, 14, 172, 0.9);
+    font-weight: 400;
+    text-decoration: none;
+    background-color: transparent;
+}
+.anxiety:hover {
+    color: #B66D7C;
+    text-decoration: none;
 }
 /*-----------------------------------------------------------------------responsive*/
 

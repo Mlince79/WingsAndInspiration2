@@ -38,10 +38,10 @@
         correctAnswer: "c"
       },
       {
-        question: "Regarding your brain?",
+        question: "In relation to your mind?",
         answers: {
-          a: "Your are in control of what is going on there",
-          b: "You can turn your brain off",
+          a: "You are in control of your thoughts",
+          b: "You are able to meditate",
           c: "None, of the above"
         },
         correctAnswer: "c"
@@ -111,7 +111,7 @@
       });
   
       // show number of correct answers out of total
-      resultsContainer.innerHTML = `You might have ${numCorrect} out of ${myQuestions.length} symptoms of anxiety`;
+      resultsContainer.innerHTML = `You might have ${numCorrect} out of ${myQuestions.length} symptoms of <a class="anxiety" href="myChart.html">anxiety</a>`;
     }
   
     function showSlide(n) {
