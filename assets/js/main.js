@@ -38,11 +38,11 @@
         correctAnswer: "c"
       },
       {
-        question: "In relation to your mind?",
+        question: "You are in control of your thoughts?",
         answers: {
-          a: "You are in control of your thoughts",
-          b: "You are able to meditate",
-          c: "None, of the above"
+        a: "Yes",
+        b: "Sometimes",
+        c: "None, of the above"
         },
         correctAnswer: "c"
       }
@@ -111,7 +111,7 @@
       });
   
       // show number of correct answers out of total
-      resultsContainer.innerHTML = `You might have ${numCorrect} out of ${myQuestions.length} symptoms of <a class="anxiety" href="myChart.html">anxiety</a>`;
+      resultsContainer.innerHTML = `You might have ${numCorrect} out of ${myQuestions.length} symptoms of anxiety.<br><a class="anxiety" href="myChart.html">Click here if you want to know more.</a>`;
     }
   
     function showSlide(n) {
