@@ -251,20 +251,12 @@ padding-left: 10px;
     height: 80vh;
     background: url(https://raw.githubusercontent.com/Mlince79/WingsAndInspiration2/master/assets/images/favpng_butterfly-watercolor-painting-illustration_ywinebux.png);/*----https://favpng.com/---*/
     background-repeat: no-repeat;
-    background-size: inherit;
     background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    font-size: 20px;
     color: rgba(101, 14, 172, 0.9);
     font-weight: 300;
-    text-align: center;
 }
 
 h1{
-    font-weight: 400;
     margin: 0px;
     font-size: 46px;
     color: rgba(101, 14, 172, 0.9);
@@ -316,10 +308,9 @@ h1{
 .quiz-container{
     position: relative;
     height: 200px;
-    margin-top: 40px;
-    width: 400px;
-    margin-left: 72px;
+    margin-top: 15px;
 }
+
 #results {
     font-weight: 400;
     font-size: 26px;
@@ -345,6 +336,24 @@ h1{
 
 /*-----------------------------------------------------------------------responsive*/
 
+@media (min-width: 768px) {
+    .quiz-slide {
+        width: 400px;
+        left: 210px;
+        top: 200px;
+    }
+    .navbar {
+        display: block;
+    }
+    .static {
+        display: none;
+    }
+    #message {
+        font-size: 30px;
+        width: 360px;
+    }
+}
+
 @media (min-width: 992px) {
     img {
         display: none;
@@ -356,13 +365,23 @@ h1{
     .navbar-brand {
         width: 100%;
     }
+    .quiz-slide {
+    width: 400px;
+    left: 780px;
+    top: 200px;
+    }
 }
+
+
 
 @media (min-width: 700px) {
     img {
         display: none;
         width: 100%;
         }
+    .canvas {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -391,7 +410,16 @@ h1{
         width: 100%;
         }
     .quiz-photo {
+        height: 75vh;
         background: none;
+        margin-top: 48px;
+    }
+    .canvas {
+        display: none;
+    }
+    #results {
+        font-weight: 300;
+        font-size: 16px;
     }
 }
 
