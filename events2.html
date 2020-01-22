@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
+	<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+	<script src='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js'></script>
+	<link href='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css' rel='stylesheet' />
+	<script src='https://npmcdn.com/@turf/turf/turf.min.js'></script>
+	<script>
+		var bbox = turf.bbox(features);
+	</script>
+	<title>Women circle map</title>
+</head>
+
+<body>
+	<main>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="row">
+						<div class="col-12">
+							<h3 class="section-heading uppercase">Women's Circle Events
+							</h3>
+						</div>
+					</div>
+					<div id="map"></div>
+				</div>
+				<div class="col-md-8">
+				</div>
+			</div>
+		</div>
+	</main>
+	<div id='map' style='width: 400px; height: 300px;'></div>
+	<script>
+		mapboxgl.accessToken = 'pk.eyJ1IjoibWFyaXNvbGxpbmNlIiwiYSI6ImNrNXAxcnR5bDFiYjkzbXJ3NHA1d3hxeDcifQ.Ae6ypT3bDCAcD7-WQfkPTA';
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v11'
+            });
+            mapboxgl.accessToken = 'pk.eyJ1IjoibWFyaXNvbGxpbmNlIiwiYSI6ImNrNXAxcnR5bDFiYjkzbXJ3NHA1d3hxeDcifQ.Ae6ypT3bDCAcD7-WQfkPTA';
+            var map = new mapboxgl.Map({
+            container: 'map', // container id
+            style: 'mapbox://styles/mapbox/streets-v11',
+            center: [18.06858, 59.32932], // starting position
+            zoom: 9 // starting zoom
+            });
+            map.addControl(new mapboxgl.NavigationControl());
+            
+            var features = turf.featureCollection([
+            turf.point( [59.33166, 18.04667]),
+            turf.point( [59.33166, 18.04667]),
+            turf.point( [59.33166, 18.04667])
+            ]);
+
+            var center = turf.center(features);
+	</script>
+</body>
+
+</html>
