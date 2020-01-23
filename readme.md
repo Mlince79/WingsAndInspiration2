@@ -82,6 +82,7 @@ To run locally, the user can clone this repository directly into the editor of t
 ## Credits
 Syed mohamed aladeen https://stackoverflow.com/questions/56800892/how-to-make-javascript-code-loop-to-repeat-text for the HOME animation loop
 I got the code from https://repl.it/@ArnavBulani/OutlandishEnragedTechnician for the quiz
+https://favpng.com/ For the background image in the quiz
 
 
 ### Content
