@@ -84,9 +84,10 @@ img {
     font-size: 46px;
     font-weight: 300;
     color: rgba(199, 99, 177, 0.9);
-    width: 400px;
-    margin-right: 550px;
     margin-top: 100px;
+    position: relative;
+    width: 380px;
+    right: 170px;
 }
 
 #message {
@@ -95,8 +96,8 @@ img {
     font-weight: 300;
     color: rgba(199, 99, 177, 0.9);
     margin-top: 100px;
-    width: 550px;
     position: absolute;
+    width: 350px;
 }
 
 /*-----------------------------------------------------------------------modal*/
@@ -334,6 +335,18 @@ h1{
     width: 360px;
     }
 
+/*-----------------------------------------------------------------------aboutMe*/
+.history-heading {
+    font-family: 'Roboto', sans-serif;
+}
+  .denisse {
+      background: url("/assets/images/denisse.JPG");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 400px;
+  }
+
 /*-----------------------------------------------------------------------responsive*/
 
 @media (min-width: 768px) {
@@ -345,13 +358,19 @@ h1{
     .navbar {
         display: block;
     }
-    .static {
-        display: none;
-    }
-    #message {
-        font-size: 30px;
-        width: 360px;
-    }
+
+}
+@media (max-width: 768px) {
+    .callout-container {
+    height: 75vh;
+    background: url(https://raw.githubusercontent.com/Mlince79/WingsAndInspiration2/master/assets/images/logo_denisse_olsson_index.jpg);
+    background-repeat: no-repeat;
+    background-size:  cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
 @media (min-width: 992px) {
