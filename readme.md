@@ -39,35 +39,50 @@ The scope level in phase 2 will be:
 
 - Blog - in this section, it is planned that every week will post relevant articles for Expat women.
 
+
 ## Technologies
 - HTML
 - CSS
 - Bootstrap (3.3.7)
 - Javascript
+- mapbox API
+- Chart.js
+- EmailJS.com
 
 ## Testing
-As soon as women arrive at the Home and at the bottom of all the sections will be a button with a call to action a clear offer. 
-They can request a free 30 min session leaving just their email and a short message about them. If the user tries to submit the contact form with an invalid email address, there will be an error noting the invalid email address.
+At the bottom of all the sections will be a button with a call to action a clear offer. They can request a free 30 min session leaving just their email and a short message about them. If the user tries to submit the contact form with an invalid email address, there will be an error noting the invalid email address.
 In the "About Me" section, they can read a bit about Denisse's background, and her photo. 
-In "My Coaching," they will learn more about who is this coaching for and what it is offering.  In this section, the user will be able to answer a question. At the end of the survey, the user will be able to see a graphic on big screens. 
+In "My Coaching," they will learn more about who this coaching is for and what it is offering.  In this section, the user will be able to answer a question. At the end of the survey, the user will be able to see a graphic on big screens. 
 In "Events" will display the map of Stockholm and will show the place and description of the coming events. 
 
 They are also able to view Denisse's social media profiles via clicking on the icons in the footer. All links will open in a new tab using 'target="_blank"'
 
 It is a responsive website.
-This site tested across multiple browsers (Chrome, Safari, Internet Explorer, FireFox) and on multiple mobile devices (iPhone 4, 5, 7: Chrome and Safari, iPad, Samsung Galaxy)
+This site tested across multiple browsers (Chrome, Safari, Internet Explorer, FireFox) and on various mobile devices (iPhone 4, 5, 7: Chrome and Safari, iPad, Samsung Galaxy)
 
 HTML and CSS code were both validated at the following pages:
 - https://validator.w3.org/#validate_by_uri+with_options
 - https://jigsaw.w3.org/css-validator/
 
+The test was conducted on gitpod and then on github. 
+
 ## Deployment
 
-This site is hosted using GitHub pages, deployed directly from the master branch. The deployed site will update automatically upon new commits to the master branch. In order for the site to deploy correctly on GitHub pages, the landing page must be named index.html.
+This site is hosted using GitHub pages, deployed directly from the master branch. 
+1: GitHub repository
+2: click on the Settings tab at the top
+3: scroll down to GitHub Pages
+4: select 'master' branch from the drop-down
+5: page should reload.
+6: scroll down again to GitHub Pages
+7: allow about 1-2 minutes for GitHub to build the site, but you should have the link available there now.
 
 To run locally, the user can clone this repository directly into the editor of their choice by pasting git clone https://github.com/Mlince79/WingsAndInspiration.git into their terminal.
 
 ## Credits
+Syed mohamed aladeen https://stackoverflow.com/questions/56800892/how-to-make-javascript-code-loop-to-repeat-text for the HOME animation loop
+I got the code from https://repl.it/@ArnavBulani/OutlandishEnragedTechnician for the quiz
+
 
 ### Content
 - The sections were planed based on the exercises done on the course.
@@ -77,4 +92,4 @@ To run locally, the user can clone this repository directly into the editor of t
 
 ### Acknowledgments
 
-- I have received inspiration for this project, Denisse Olsson.
+- I have received inspiration for this project, Denisse Olsson, Mentors and Tutors from Code Institute. Expericed developers as Syed Mohamed Aladeen, Arnav Bulani.
