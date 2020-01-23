@@ -103,7 +103,6 @@ img {
 /*-----------------------------------------------------------------------modal*/
 
 .btn-cta {
-    font-weight: 400px;
     border-radius: 23px;
     width: 475px;
     margin-top: 20px;
@@ -125,7 +124,6 @@ img {
 
 .fa-heart {
     color: rgba(101, 14, 172, 0.9);
-    size: 100px;
     display: inline;
     position: inherit;
     padding-left: 12rem;
@@ -217,7 +215,6 @@ i {
 
  .fa-hand-holding-heart {
     color:  #fff;
-    size: 100px;
 }
 
 #mc {
@@ -453,7 +450,6 @@ source {
     }
     .btn-cta {
         width: 325px;
-        font-weight: 400px;
         font-size: 16px;
     }
     .navbar-light .navbar-nav .nav-link {
