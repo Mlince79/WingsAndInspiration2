@@ -75,8 +75,22 @@
         type: 'bar',
         data:{
             labels:["16-24", "25-44", "45-64", "65-74", "75-84", "85+"],
-            datasets: [{
-                label: 'Women in Sweden',
+            datasets: [
+            {
+                label: '2016-2017',
+                backgroundColor:'rgba(101, 14, 172, 0.9)',
+                data: [
+                    45,
+                    35,
+                    27,
+                    22,
+                    22,
+                    0
+                    
+                ],  
+            }, {
+                label: '2018',
+                backgroundColor:'rgba(199, 99, 177, 0.9);',
                 data: [
                     44,
                     34,
@@ -84,15 +98,15 @@
                     23,
                     28,
                     26
-                ],
-                backgroundColor:'rgba(101, 14, 172, 0.9)',
+                ],  
 
             }],
+
         },
         options: {
             title:{
                 display:true,
-                text:'Disorders of anxiety, worry or anxiety in % after age (2018)',
+                text:'Disorders of anxiety, worry or anxiety in % after age (Sweden)',
                 fontZise:25,
             },
             scales: {
@@ -112,6 +126,7 @@
         }
     });
 	</script>
+    <Source>Source: Undersökningarna av levnadsförhållanden (ULF/SILC), SCB, publicerad i SCB Jämställdhet</Source>
 	<footer>
 		<div class="container-fluid text-center img-fluid">
 			<div class="row">

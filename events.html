@@ -14,13 +14,16 @@
 	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://kit.fontawesome.com/3c62aba979.js" crossorigin="anonymous"></script>
-    <title>Women Coaching Denisse Olson Sweden</title>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
     <script type="text/javascript">
         (function(){
                 emailjs.init("user_DW6OL32rF4zjjcqn5NAVG");
             })();
     </script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js'></script>
+	<link href='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css' rel='stylesheet' />
+	<script src='https://npmcdn.com/@turf/turf/turf.min.js'></script>
+    <title>Women Coaching Denisse Olson Sweden</title>
 </head>
 
 <body>
@@ -45,23 +48,103 @@
 				</div>
 		</nav>
 	</header>
-    <main>
+    <main class="mt-3">
         <div class="container">
             <div class="row">
+                <div class="col-12">
+                    <h3 class="mb-5 mt-5 font-weight-bold section-heading text-uppercase">women circle
+                    </h3>
+                </div>
                 <div class="col-md-4">
-                    <div class="row">
-                        <div class="col-12">
-                            <h3 class="section-heading uppercase">Women's Circle Events
-                            </h3>
-                        </div>
-                    </div>
-                    <div id="map"></div>
+                <div id="map"></div>
                 </div>
                 <div class="col-md-8">
+                    <h3 class="mb-3 font-weight-bold section-heading text-uppercase ">What is a women circle?</h3>
+                    <p class="history-heading">A women's circle is a safe and sacred space for women to come together, use their voices, be heard, and seen. Women throughout history have gathered in circles to empower each other and share wisdom. Women's circles are important at this time as society is so fast-paced and focused on achieving things.</p>
+                    <p>Women often give hugely to the world and don't allow time for themselves. Women's circles are spaces where women may celebrate, nurture, and replenish themselves.</p>
+                    <p>The circles will include different practices such as journaling, meditation, restorative Yoga, breathing exercises among other sounds, aromatherapy and healing exercises.</p>
+                    <p>Duration 60min</p>
+                    <p>Price: 200 SEK ***Limited places.</p>
+                    <p> to: 070 213 02 84 Denisse Olsson /Women coach and Yoga teacher</p>
                 </div>
             </div>
-        </div>
+         </div>
     </main>
+	<script>
+		mapboxgl.accessToken = 'pk.eyJ1IjoibWFyaXNvbGxpbmNlIiwiYSI6ImNrNXAxcnR5bDFiYjkzbXJ3NHA1d3hxeDcifQ.Ae6ypT3bDCAcD7-WQfkPTA';
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v11'
+            });
+            mapboxgl.accessToken = 'pk.eyJ1IjoibWFyaXNvbGxpbmNlIiwiYSI6ImNrNXAxcnR5bDFiYjkzbXJ3NHA1d3hxeDcifQ.Ae6ypT3bDCAcD7-WQfkPTA';
+            var map = new mapboxgl.Map({
+            container: 'map', // container id
+            style: 'mapbox://styles/mapbox/streets-v11',
+            center: [18.06858, 59.32932], // starting position
+            zoom: 9 // starting zoom
+            });
+            map.addControl(new mapboxgl.NavigationControl());
+            
+            map.on('load', function() {
+            // Add a layer showing the places.
+            map.addLayer({
+                'id': 'places',
+                'type': 'symbol',
+                'source': {
+                    'type': 'geojson',
+                    'data': {
+                        'type': 'FeatureCollection',
+                        'features': [
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                'description':
+                                '<strong>Women Circles</strong><p><a href="https://www.facebook.com/events/1658299764323827/?event_time_id=1658299774323826">At Yogansa</a> a safe and sacred space for women to come together, use their voices, be heard and be seen. Sundays from 18:00 to 19:00</p>',
+                                'icon': 'music'
+                                },
+                                'geometry': {
+                                    'type': 'Point',
+                                    'coordinates': [ 18.04667, 59.33166]
+                                    }
+                                    }
+                                    ]
+                                    }
+                                    },
+                                    'layout': {
+                                        'icon-image': '{icon}-15',
+                                        'icon-allow-overlap': true
+                                        }
+                                        });
+        // When a click event occurs on a feature in the places layer, open a popup at the
+        // location of the feature, with description HTML from its properties.
+        map.on('click', 'places', function(e) {
+        var coordinates = e.features[0].geometry.coordinates.slice();
+        var description = e.features[0].properties.description;
+        
+        // Ensure that if the map is zoomed out such that multiple
+        // copies of the feature are visible, the popup appears
+        // over the copy being pointed to.
+        while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+        coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+        }
+        
+        new mapboxgl.Popup()
+        .setLngLat(coordinates)
+        .setHTML(description)
+        .addTo(map);
+        });
+        
+        // Change the cursor to a pointer when the mouse is over the places layer.
+        map.on('mouseenter', 'places', function() {
+        map.getCanvas().style.cursor = 'pointer';
+        });
+        
+        // Change it back to a pointer when it leaves.
+        map.on('mouseleave', 'places', function() {
+        map.getCanvas().style.cursor = '';
+        });
+        });
+    </script>
     <footer>
         <div class="container-fluid text-center img-fluid">
             <div class="row">
@@ -151,6 +234,5 @@
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxVlm-ouICmMcl0_0OH853iIkE2_u8bD0&callback=initMap"></script>
     <script src="assets/js/sendEmail.js"></script>
-    <script src="assets/js/maps.js"></script>
 </body>
 </html>

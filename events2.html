@@ -52,34 +52,34 @@
             
             map.on('load', function() {
             // Add a layer showing the places.
-map.addLayer({
-'id': 'places',
-'type': 'symbol',
-'source': {
-'type': 'geojson',
-'data': {
-'type': 'FeatureCollection',
-'features': [
-{
-'type': 'Feature',
-'properties': {
-'description':
-'<strong>Truckeroo</strong><p><a href="http://www.truckeroodc.com/www/" target="_blank">Truckeroo</a> brings dozens of food trucks, live music, and games to half and M Street SE (across from Navy Yard Metro Station) today from 11:00 a.m. to 11:00 p.m.</p>',
-'icon': 'music'
-},
-'geometry': {
-'type': 'Point',
-'coordinates': [ 18.04667, 59.33166]
-}
-}
-]
-}
-},
-'layout': {
-'icon-image': '{icon}-15',
-'icon-allow-overlap': true
-}
-});
+            map.addLayer({
+                'id': 'places',
+                'type': 'symbol',
+                'source': {
+                    'type': 'geojson',
+                    'data': {
+                        'type': 'FeatureCollection',
+                        'features': [
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                'description':
+                                '<strong>Women Circles</strong><p><a href="https://www.facebook.com/events/1658299764323827/?event_time_id=1658299774323826">At Yogansa</a> a safe and sacred space for women to come together, use their voices, be heard and be seen. Sundays from 18:00 to 19:00</p>',
+                                'icon': 'music'
+                                },
+                                'geometry': {
+                                    'type': 'Point',
+                                    'coordinates': [ 18.04667, 59.33166]
+                                    }
+                                    }
+                                    ]
+                                    }
+                                    },
+                                    'layout': {
+                                        'icon-image': '{icon}-15',
+                                        'icon-allow-overlap': true
+                                        }
+                                        });
  
 // When a click event occurs on a feature in the places layer, open a popup at the
 // location of the feature, with description HTML from its properties.
@@ -110,7 +110,6 @@ map.on('mouseleave', 'places', function() {
 map.getCanvas().style.cursor = '';
 });
 });
-	</script>
 	</script>
 </body>
 
