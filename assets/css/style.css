@@ -360,7 +360,7 @@ source {
     padding-top: 36px;
 }
   .denisse {
-      background: url("/assets/images/denisse.JPG");
+      background: url("../images/denisse.JPG");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
