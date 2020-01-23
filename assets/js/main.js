@@ -161,3 +161,5 @@
     previousButton.addEventListener("click", showPreviousSlide);
     nextButton.addEventListener("click", showNextSlide);
   })();
+
+  // I got the code from https://repl.it/@ArnavBulani/OutlandishEnragedTechnician

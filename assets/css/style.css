@@ -340,31 +340,43 @@ source {
     height: 360px;
     width: 360px;
     }
+.container-event {
+    font-family: 'Roboto', sans-serif;
+}
 
+/*-----------------------------------------------------------------------blog*/
+#blog {
+    height: 800px;
+}
+
+.blog-section {
+    position: fixed;
+    bottom: 50%;
+    left: 43%;
+}
 /*-----------------------------------------------------------------------aboutMe*/
   .aboutMe{
     font-family: 'Roboto', sans-serif;
     padding-top: 36px;
 }
-.container-aboutme{
-    width: 1200px;
-    position: relative;
-    font-size: 18px; 
-}
   .denisse {
-      background: url("/assets/images/denisse.JPG");
+      background: url("assets/images/denisse.JPG");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-  }
-  .history-heading{
-      padding-top: 16px;
   }
   .certification{
-      background: url("/images/certificacion_denisse_olsson.png");
+      background: url("../images/certificacion_denisse_olsson.png");
       background-position: center;
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: contain;
+      min-height: 100px;
+  }
+  .certification-two{
+      background: url("../images/certificacion2_denisse_olsson.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
       min-height: 100px;
   }
   
@@ -392,6 +404,9 @@ source {
     align-items: center;
     justify-content: center;
     position: relative;
+    }
+    #map {
+        width: 200px;
     }
 }
 
@@ -437,7 +452,7 @@ source {
         font-size: 36px;
     }
     .btn-cta {
-        width: 275px;
+        width: 325px;
         font-weight: 400px;
         font-size: 16px;
     }
@@ -459,5 +474,17 @@ source {
         font-weight: 300;
         font-size: 16px;
     }
+    .callout-container {
+        height: 75vh;
+        background: url(https://raw.githubusercontent.com/Mlince79/WingsAndInspiration2/master/assets/images/logo_denisse_olsson_index.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #map {
+        width: 350px;
+    }
+    .fa-heart {
+        padding-left: 7rem;
 }
 
