@@ -14,7 +14,7 @@
 
 .navbar-light .navbar-nav .nav-link {
     color: rgba(199, 99, 177, 0.9);
-    font-size: 30px;
+    font-size: 15   px;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
@@ -40,7 +40,7 @@ img {
 .navbar {
     margin-left: 0;
     border: 0;
-    font-size: 20px;
+    font-size: 18px;
     width: 100%;
     padding: 0;
 }
@@ -81,8 +81,8 @@ img {
 
 .static {
     font-family: 'Oswald', sans-serif;
-    font-size: 46px;
-    font-weight: 300;
+    font-size: 26px;
+    font-weight: 200;
     color: rgba(199, 99, 177, 0.9);
     margin-top: 100px;
     position: relative;
@@ -92,8 +92,8 @@ img {
 
 #message {
     font-family: 'Oswald', sans-serif;
-    font-size: 46px;
-    font-weight: 300;
+    font-size: 26px;
+    font-weight: 200;
     color: rgba(199, 99, 177, 0.9);
     margin-top: 100px;
     position: absolute;
@@ -101,11 +101,15 @@ img {
 }
 
 /*-----------------------------------------------------------------------modal*/
+.btn {
+    font-weight: 200;
+}
 
 .btn-cta {
-    border-radius: 23px;
-    width: 475px;
-    margin-top: 20px;
+    border-radius: 50px;
+    width: 377px;
+    margin-top: 19px;
+    margin-left: 40px;
 }
 
 .btn--pink {
@@ -113,6 +117,9 @@ img {
     background-color: rgba(199, 99, 177, 0.9);
 }
 
+.btn .btn-cta .btn--pink {
+    text-align: center;
+}
 .btn--pink:hover {
     background-color: rgba(101, 14, 172, 0.9);
     color: white;
@@ -147,7 +154,7 @@ footer {
     height: 32px;
     padding: 12px 0;
     border-radius: 60%;
-    font-size: 13px;
+    font-size: 12px;
     line-height: 7px;
     text-align: center;
     color:white;
@@ -174,20 +181,20 @@ section {
     font-family: 'Roboto', sans-serif;
 }
 h2 {
-    font-size: 30px; 
+    font-size: 18px; 
     font-weight: 400;
     color: rgba(101, 14, 172, 0.9);
     padding-top: 50px;
 }
 h4 {
-    font-size: 26px; 
+    font-size: 14px; 
     font-weight: 400;
     color: rgba(101, 14, 172, 0.9);
 }
 
 h3 {
-    font-size: 24px; 
-    font-weight: 300;
+    font-size: 16px; 
+    font-weight: 200;
     color: rgba(101, 14, 172, 0.9);
     margin: 0px;
 }
@@ -226,7 +233,7 @@ padding-left: 10px;
 }
 .btn--lila{
     font-family: 'Roboto', sans-serif;
-    font-size: 22px;
+    font-size: 16px;
     background-color: rgba(101, 14, 172, 0.9);
     color: #fff;
     border: 0px;
@@ -251,18 +258,18 @@ padding-left: 10px;
     background-repeat: no-repeat;
     background-position: center;
     color: rgba(101, 14, 172, 0.9);
-    font-weight: 300;
+    font-weight: 200;
 }
 
 h1{
     margin: 0px;
-    font-size: 46px;
+    font-size: 26px;
     color: rgba(101, 14, 172, 0.9);
     font-family: 'Roboto', sans-serif;
 }
 .question{
     font-family: 'Roboto', sans-serif;
-    font-size: 26px;
+    font-size: 24px;
 }
 .answers {
     margin-bottom: 16px;
@@ -273,18 +280,18 @@ h1{
 }
 .answers label{
     display: block;
-    margin-bottom: 10px;
 }
+
 .btn-lilla2{
     font-family: 'Roboto', sans-serif;
-    font-size: 22px;
+    font-size: 18px;
     background-color: rgba(101, 14, 172, 0.9);
     color: #fff;
     border: 0px;
     padding: 10px;
     cursor: pointer;
     margin-bottom: 20px;
-    font-weight: 400px;
+    font-weight: 200px;
     border-radius: 23px;
 }
 .btn-lilla2:hover{
@@ -310,8 +317,8 @@ h1{
 }
 
 #results {
-    font-weight: 400;
-    font-size: 26px;
+    font-weight: 200;
+    font-size: 16px;
     background-color: rgba(243, 232, 241, 0.9);
     display: block;
     position: absolute;
@@ -329,7 +336,7 @@ h1{
 
 source {
         font-family: 'Roboto', sans-serif;
-        font-size: 22px;
+        font-size: 18px;
         text-align: center;
 }
 /*-----------------------------------------------------------------------events*/
@@ -446,7 +453,7 @@ source {
         width: 100%;
         margin-right: 0;
         margin-top: 0;
-        font-size: 36px;
+        font-size: 20px;
     }
     .btn-cta {
         width: 325px;
