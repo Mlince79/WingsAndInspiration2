@@ -3,9 +3,8 @@
 
 
 /*-----------------------------------------------------------------------navbar*/
-
-body {
-    height: 890px;
+.container {
+    padding: 0;
 }
 
 .brand-header  {
@@ -197,6 +196,11 @@ section {
     font-size: 14px;
 }
 
+.mt-4 {
+    height: 731.25px;
+    padding-top: 20px;
+}
+
 cite{
     font-family: 'Oswald', sans-serif;
     font-weight: 200;
@@ -204,20 +208,21 @@ cite{
 }
 
 h2 {
+    font-family: 'Oswald', sans-serif;
     font-size: 18px; 
-    font-weight: 400;
     color: rgba(101, 14, 172, 0.9);
-    padding-top: 50px;
 }
+
 h4 {
+    font-family: 'Oswald', sans-serif;
     font-size: 14px; 
     font-weight: 400;
     color: rgba(101, 14, 172, 0.9);
 }
 
 h3, strong {
+    font-family: 'Oswald', sans-serif;
     font-size: 16px; 
-    font-weight: 300;
     color: rgba(101, 14, 172, 0.9);
     margin: 0px;
 }
@@ -280,7 +285,16 @@ padding-left: 10px;
     font-weight: 200;
     font-size: 14px;
 }
+
+.mycoaching-name {
+    padding-top: 35px;
+}
+
 /*-----------------------------------------------------------------------events*/
+.rounded {
+    width: 50%;
+}
+
 #map {
     height: 360px;
     width: 360px;
@@ -310,13 +324,6 @@ padding-left: 10px;
     font-family: 'Oswald', sans-serif;
     color: rgb(101, 14, 172, 0.9);
   }
-  .aboutMe{
-    font-family: 'Oswald', sans-serif;
-    font-weight: 200;
-    padding-top: 36px;
-    height: 731.25px;
-    font-size: 14px;
-}
 
   .denisse {
       background: url("../images/denisse.JPG");
@@ -431,6 +438,10 @@ padding-left: 10px;
         background-size: cover;
         background-position: center;
     }
+
+     .denisse {
+         padding: -10px;
+     }
     #map {
         width: 350px;
     }
