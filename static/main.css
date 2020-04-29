@@ -36,8 +36,8 @@ img {
 }
 
 .nav-right{
-  float: right !important;
-  margin: 8px 15px !important;
+    float: right !important;
+    margin: 8px 15px !important;
 }
 
 .navbar {
@@ -311,16 +311,6 @@ padding-left: 10px;
     font-weight: 200;
 }
 
-/*-----------------------------------------------------------------------blog*/
-#blog {
-    height: 800px;
-}
-
-.blog-section {
-    position: fixed;
-    bottom: 50%;
-    left: 43%;
-}
 /*-----------------------------------------------------------------------aboutMe*/
   h1 {
     font-family: 'Oswald', sans-serif;
@@ -340,6 +330,57 @@ padding-left: 10px;
       font-size: 14;
   }
   
+/*-----------------------------------------------------------------------blog*/
+a {
+    color: rgba(199, 99, 177, 0.9);
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+}
+
+main {
+    margin-top: 5rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+}
+
+.article-title {
+  color: rgb(101, 14, 172, 0.9);
+}
+
+.content-section {
+  background: #ffffff;
+  padding: 10px 20px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+a.article-title:hover {
+  color: rgba(199, 99, 177, 0.9);
+  text-decoration: none;
+}
+
+.article-content {
+  white-space: pre-line;
+}
+
+.article-img {
+  height: 65px;
+  width: 65px;
+  margin-right: 16px;
+}
+
+.article-metadata {
+  padding-bottom: 1px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.article-metadata a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
   /*-----------------------------------------------------------------------responsive*/
 
 @media (min-width: 768px) {
