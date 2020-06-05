@@ -1,0 +1,86 @@
+{% extends 'layout.html' %}
+{% block content %}
+    <div class="container">
+        <p class="ml-3 history-heading content">Duration 60min</p>
+        <p class="ml-3 history-heading content">Price: 200 SEK ***Limited places.</p>
+        <p class="ml-3 history-heading content">Swish to: 070 213 02 84 Denisse Olsson /Women coach and Yoga teacher</p>
+        <p>2/ Feb -2020: Creativity and Manifesting: How does creativity relate to being a woman?</p>
+        <p>1/ March-2020: Intuition –How can we develop our intuition? </p>
+        <p>5/April -2020: Our Mothers and Motherhood – Are we our mothers? </p>
+        <p>3/May-2020: Beauty: Mirror, Mirror on the Wall – What is beautiful? How do you define external and internal beauty?</p>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoibWFyaXNvbGxpbmNlIiwiYSI6ImNrNXAxcnR5bDFiYjkzbXJ3NHA1d3hxeDcifQ.Ae6ypT3bDCAcD7-WQfkPTA';
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v11'
+            });
+            mapboxgl.accessToken = 'pk.eyJ1IjoibWFyaXNvbGxpbmNlIiwiYSI6ImNrNXAxcnR5bDFiYjkzbXJ3NHA1d3hxeDcifQ.Ae6ypT3bDCAcD7-WQfkPTA';
+            var map = new mapboxgl.Map({
+            container: 'map', // container id
+            style: 'mapbox://styles/mapbox/streets-v11',
+            center: [18.06858, 59.32932], // starting position
+            zoom: 9 // starting zoom
+            });
+            map.addControl(new mapboxgl.NavigationControl());
+            
+            map.on('load', function() {
+            // Add a layer showing the places.
+            map.addLayer({
+                'id': 'places',
+                'type': 'symbol',
+                'source': {
+                    'type': 'geojson',
+                    'data': {
+                        'type': 'FeatureCollection',
+                        'features': [
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                'description':
+                                '<strong>Women Circles</strong><p><a target="_blank" href="https://www.facebook.com/events/1658299764323827/?event_time_id=1658299774323826">At Yogansa</a> a safe and sacred space for women to come together, use their voices, be heard and be seen. Sundays from 18:00 to 19:00</p>',
+                                'icon': 'music'
+                                },
+                                'geometry': {
+                                    'type': 'Point',
+                                    'coordinates': [ 18.04667, 59.33166]
+                                    }
+                                    }
+                                    ]
+                                    }
+                                    },
+                                    'layout': {
+                                        'icon-image': '{icon}-15',
+                                        'icon-allow-overlap': true
+                                        }
+                                        });
+        // When a click event occurs on a feature in the places layer, open a popup at the
+        // location of the feature, with description HTML from its properties.
+        map.on('click', 'places', function(e) {
+        var coordinates = e.features[0].geometry.coordinates.slice();
+        var description = e.features[0].properties.description;
+        
+        // Ensure that if the map is zoomed out such that multiple
+        // copies of the feature are visible, the popup appears
+        // over the copy being pointed to.
+        while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+        coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+        }
+        
+        new mapboxgl.Popup()
+        .setLngLat(coordinates)
+        .setHTML(description)
+        .addTo(map);
+        });
+        
+        // Change the cursor to a pointer when the mouse is over the places layer.
+        map.on('mouseenter', 'places', function() {
+        map.getCanvas().style.cursor = 'pointer';
+        });
+        
+        // Change it back to a pointer when it leaves.
+        map.on('mouseleave', 'places', function() {
+        map.getCanvas().style.cursor = '';
+        });
+        });
+    </script>
+{% endblock content %}

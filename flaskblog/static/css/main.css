@@ -2,7 +2,13 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap');
 
 
+
+
 /*-----------------------------------------------------------------------navbar*/
+.small-logo{
+    display: inline;
+}
+
 .container {
     padding: 0;
 }
@@ -17,7 +23,7 @@
 
 .navbar-light .navbar-nav .nav-link {
     color: rgba(199, 99, 177, 0.9);
-    font-size: 15   px;
+    font-size: 1.5rem;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
@@ -29,10 +35,10 @@
 }
 
 img {
-    width: 100%;
     align-content: center;
     position: initial;
     padding-top: 20px;
+    width: 100%;
 }
 
 .nav-right{
@@ -71,7 +77,7 @@ img {
 }
 
 .callout-container {
-    height: 77vh;
+    height: 72vh;
     background: url(https://raw.githubusercontent.com/Mlince79/WingsAndInspiration2/master/assets/images/denisse_olsson.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -193,36 +199,35 @@ section {
 .review {
     font-family: 'Oswald', sans-serif;
     font-weight: 200;
-    font-size: 14px;
+    font-size: 1rem;
 }
 
 .mt-4 {
-    height: 731.25px;
     padding-top: 20px;
 }
 
 cite{
     font-family: 'Oswald', sans-serif;
     font-weight: 200;
-    font-size: 14px;
+    font-size: .8rem;
 }
 
 h2 {
     font-family: 'Oswald', sans-serif;
-    font-size: 18px; 
+    font-size: 1rem; 
     color: rgba(101, 14, 172, 0.9);
 }
 
 h4 {
     font-family: 'Oswald', sans-serif;
-    font-size: 14px; 
+    font-size: 1rem; 
     font-weight: 400;
     color: rgba(101, 14, 172, 0.9);
 }
 
 h3, strong {
     font-family: 'Oswald', sans-serif;
-    font-size: 16px; 
+    font-size: 1rem; 
     color: rgba(101, 14, 172, 0.9);
     margin: 0px;
 }
@@ -256,9 +261,6 @@ i {
 padding-left: 10px;
 }
 
-.content {
-    font-size: 18px;
-}
 .btn--lila{
     font-family: 'Oswald', sans-serif;
     font-size: 16px;
@@ -283,7 +285,7 @@ padding-left: 10px;
 .content {
     font-family: 'Oswald', sans-serif;
     font-weight: 200;
-    font-size: 14px;
+    font-size: 1rem;
 }
 
 .mycoaching-name {
@@ -302,7 +304,6 @@ padding-left: 10px;
 .container-event {
     font-family: 'Oswald', sans-serif;
     height: 70vh;
-    display: cover;
     max-width: 100%;
     background: url(https://raw.githubusercontent.com/Mlince79/WingsAndInspiration2/master/assets/images/favpng_butterfly-watercolor-painting-illustration_ywinebux.png);/*----https://favpng.com/---*/
     background-repeat: no-repeat;
@@ -322,23 +323,45 @@ padding-left: 10px;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      height: 70vh;
+      height: 73vh;
   }
 
   .certification {
       color: black;
-      font-size: 14;
+      font-size: 1rem;
   }
-  
+
+/*-----------------------------------------------------------------------account*/
+
+  .account-img {
+  height: 125px;
+  width: 125px;
+  margin-right: 20px;
+  margin-bottom: 16px;
+  display: block;
+  padding: 0;
+
+}
+
+.account-heading {
+  font-size: 2.5rem;
+}
+
 /*-----------------------------------------------------------------------blog*/
-a {
+a.check {
     color: rgba(199, 99, 177, 0.9);
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
+    text-decoration: none;
+}
+
+a.check:hover {
+    color: rgba(101, 14, 172, 0.9);
+    text-decoration: none;
 }
 
 main {
-    margin-top: 5rem;
+    margin-top: 3rem;
     font-family: 'Oswald', sans-serif;
     font-weight: 200;
 }
@@ -355,6 +378,12 @@ main {
   margin-bottom: 20px;
 }
 
+/*-----------------------------------------------------------------------create_post*/
+.article-title {
+  color: rgba(101, 14, 172, 0.9);
+  font-size: 2rem;
+}
+
 a.article-title:hover {
   color: rgba(199, 99, 177, 0.9);
   text-decoration: none;
@@ -368,6 +397,8 @@ a.article-title:hover {
   height: 65px;
   width: 65px;
   margin-right: 16px;
+  display: block;
+  padding-top:0;
 }
 
 .article-metadata {
@@ -396,7 +427,7 @@ a.article-title:hover {
 }
 @media (max-width: 768px) {
     .callout-container {
-    height: 75vh;
+    height: 72vh;
     background: url(https://raw.githubusercontent.com/Mlince79/WingsAndInspiration2/master/assets/images/background_max_with_700_wings_and_inspiration.jpg);
     background-repeat: no-repeat;
     background-size:  cover;
@@ -442,9 +473,11 @@ a.article-title:hover {
     .justify-content-center {
         padding-top: 0;
     }
+
     .static {
         display: none;
     }
+
     #message {
         position: inherit;
         width: 100%;
@@ -452,28 +485,35 @@ a.article-title:hover {
         margin-top: 0;
         font-size: 20px;
     }
+
     .btn-cta {
         width: 325px;
         font-size: 16px;
     }
+
     .navbar-light .navbar-nav .nav-link {
         font-size: 20px;
     }
+
     .navbar {
         width: 100%;
-        }
+    }
+    
     .quiz-photo {
         height: 75vh;
         background: none;
         margin-top: 48px;
     }
+
     .canvas {
         display: none;
     }
+
     #results {
         font-weight: 300;
         font-size: 16px;
     }
+
     .callout-container {
         height: 75vh;
         background: url(https://raw.githubusercontent.com/Mlince79/WingsAndInspiration2/master/assets/images/logo_denisse_olsson_index.jpg);
@@ -485,10 +525,15 @@ a.article-title:hover {
      .denisse {
          padding: -10px;
      }
+
     #map {
         width: 350px;
     }
     .fa-heart {
         padding-left: 7rem;
-}
+    }
 
+    .about-me, .home{
+        margin-top: 0;
+    }
+}
