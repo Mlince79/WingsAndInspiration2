@@ -23,7 +23,7 @@
 
 .navbar-light .navbar-nav .nav-link {
     color: rgba(199, 99, 177, 0.9);
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
@@ -49,7 +49,7 @@ img {
 .navbar {
     margin-left: 0;
     border: 0;
-    font-size: 18px;
+    font-size: 2rem;
     width: 100%;
     padding: 0;
 }
@@ -63,7 +63,7 @@ img {
 }
 
 .img-fluid {
-    background: url(https://raw.githubusercontent.com/Mlince79/WingsAndInspiration2/master/assets/images/fondo_superior.png);
+    background: url(https://raw.githubusercontent.com/Mlince79/WingsAndInspiration2/master/flaskblog/static/images/fondo_superior.png);
     max-width: 100%;
     height: auto;
     background-repeat: no-repeat;
@@ -78,9 +78,9 @@ img {
 
 .callout-container {
     height: 72vh;
-    background: url(https://raw.githubusercontent.com/Mlince79/WingsAndInspiration2/master/assets/images/denisse_olsson.jpg);
+    background: url(https://raw.githubusercontent.com/Mlince79/WingsAndInspiration2/master/flaskblog/static/images/interior.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: con;
     background-position: center;
     display: flex;
     align-items: center;
@@ -90,7 +90,7 @@ img {
 
 .static {
     font-family: 'Oswald', sans-serif;
-    font-size: 26px;
+    font-size: 2rem;
     font-weight: 200;
     color: rgba(199, 99, 177, 0.9);
     margin-top: 100px;
@@ -101,10 +101,11 @@ img {
 
 #message {
     font-family: 'Oswald', sans-serif;
-    font-size: 26px;
+    font-size: 2rem;
     font-weight: 200;
     color: rgba(199, 99, 177, 0.9);
     margin-top: 100px;
+    margin-left: 45px;
     position: absolute;
     width: 350px;
 }
@@ -124,7 +125,6 @@ img {
 .btn-cta {
     border-radius: 50px;
     width: 377px;
-    margin-top: 19px;
 }
 
 .btn--pink {
@@ -185,6 +185,7 @@ footer {
     padding-top: 10px;
     padding-bottom: 10px;
     position: inherit;
+    margin-right: 170px;
 }
 
 .general-sub {
@@ -214,20 +215,20 @@ cite{
 
 h2 {
     font-family: 'Oswald', sans-serif;
-    font-size: 1rem; 
+    font-size: 1.2rem; 
     color: rgba(101, 14, 172, 0.9);
 }
 
 h4 {
     font-family: 'Oswald', sans-serif;
-    font-size: 1rem; 
+    font-size: 1.2rem; 
     font-weight: 400;
     color: rgba(101, 14, 172, 0.9);
 }
 
 h3, strong {
     font-family: 'Oswald', sans-serif;
-    font-size: 1rem; 
+    font-size: 1.2rem; 
     color: rgba(101, 14, 172, 0.9);
     margin: 0px;
 }
@@ -285,7 +286,7 @@ padding-left: 10px;
 .content {
     font-family: 'Oswald', sans-serif;
     font-weight: 200;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .mycoaching-name {
@@ -328,7 +329,7 @@ padding-left: 10px;
 
   .certification {
       color: black;
-      font-size: 1rem;
+      font-size: 1.2rem;
   }
 
 /*-----------------------------------------------------------------------account*/
@@ -467,6 +468,9 @@ a.article-title:hover {
         display: none;
         width: 100%;
         }
+    .list-inline {
+        margin-right: 0;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -482,8 +486,10 @@ a.article-title:hover {
         position: inherit;
         width: 100%;
         margin-right: 0;
-        margin-top: 0;
-        font-size: 20px;
+        margin-top: 50px;
+        font-size: 1.2rem;
+        margin-left: 0;
+        color: rgba(101, 14, 172, 0.9);
     }
 
     .btn-cta {
@@ -516,7 +522,7 @@ a.article-title:hover {
 
     .callout-container {
         height: 75vh;
-        background: url(https://raw.githubusercontent.com/Mlince79/WingsAndInspiration2/master/assets/images/logo_denisse_olsson_index.jpg);
+        background: url(https://raw.githubusercontent.com/Mlince79/WingsAndInspiration2/master/flaskblog/static/images/interior.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -535,5 +541,15 @@ a.article-title:hover {
 
     .about-me, .home{
         margin-top: 0;
+    }
+    
+    .list-inline {
+        margin-right: 0;
+    }
+
+    .btn-cta-submit{
+        margin-top: 0;
+        margin-left: 0;
+        width: 337px;
     }
 }

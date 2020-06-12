@@ -1,7 +1,10 @@
 # Wings And Inspiration
-Stream One Project: Interactive Frontend Development Milestone Project - Code Institute
+Data Centric Development Milestone Project- Code Institute
 
-This project is a continuation of the first milestone. The idea was to include professional design and include the requirements of Javascript and Javascript API. 
+This project is a continuation of the second milestone. 
+This time including Build a SQLAlchemy Flask project for a web application that allows users to store and manipulate data records about a particular domain. 
+The project is an exercise of the 
+I got the recomendation from my mentor to do it with MONGO DB but I was very interested to know and appply the SQLAlchemy and I find it very usefull. In the last revision he was ok with it. 
 This website will offer all women the opportunity to get in contact with a great companion. Under the umbrella of Wings and Inspiration project, Denisse will provide her Coaching to help them adapt to their new country the best way, and be able to live their Expat life to the fullest.
 
 ## UX
