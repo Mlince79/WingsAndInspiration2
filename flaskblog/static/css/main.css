@@ -78,7 +78,7 @@ img {
 
 .callout-container {
     height: 72vh;
-    background: url(https://raw.githubusercontent.com/Mlince79/WingsAndInspiration2/master/flaskblog/static/images/interior.jpg);
+    background: url(https://raw.githubusercontent.com/Mlince79/WingsAndInspiration2/master/flaskblog/static/images/tepe_home.jpg);
     background-repeat: no-repeat;
     background-size: con;
     background-position: center;
@@ -429,7 +429,7 @@ a.article-title:hover {
 @media (max-width: 768px) {
     .callout-container {
     height: 72vh;
-    background: url(https://raw.githubusercontent.com/Mlince79/WingsAndInspiration2/master/assets/images/background_max_with_700_wings_and_inspiration.jpg);
+    background: url(https://raw.githubusercontent.com/Mlince79/WingsAndInspiration2/master/flaskblog/static/images/ipad.jpg);
     background-repeat: no-repeat;
     background-size:  cover;
     background-position: center;
