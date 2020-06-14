@@ -1,21 +1,22 @@
-# Wings And Inspiration
-Data Centric Development Milestone Project- Code Institute
+# Wings And Inspiration 3 Data-Centric Development Milestone Project- Code Institute
 
-This project is a continuation of the second milestone. 
-This time including Build a SQLAlchemy Flask project for a web application that allows users to store and manipulate data records about a particular domain. 
-The project is an exercise of the 
-I got the recomendation from my mentor to do it with MONGO DB but I was very interested to know and appply the SQLAlchemy and I find it very usefull. In the last revision he was ok with it. 
-This website will offer all women the opportunity to get in contact with a great companion. Under the umbrella of Wings and Inspiration project, Denisse will provide her Coaching to help them adapt to their new country the best way, and be able to live their Expat life to the fullest.
+This project is a continuation of the second milestone. The reasons for my decision to continue with the previous development are:
+ Improve my result; I did not get a good outcome on several topics. Having a work that was not good enough to be presented as part of my portfolio is something I was unwilling to keep. So I decided to check the weak areas and learn from that improving them. 
+Create the areas that were missing. The Blog section was missing, and I saw that the requirements for this milestone fit very well. 
+I have added an SQLAlchemy Flask project for a web application that allows users to store and manipulate data records about a particular domain. 
+I did get the recommendation from my mentor to do it with MONGO DB. Nevertheless, I was very interested in learning and applying the SQLAlchemy; I find it very easy and appealing. In our last revision, he was ok with it. 
+This website will offer all women the opportunity to get in contact with a great companion. Under the umbrella of Wings and Inspiration project, Denisse will provide her Coaching to help them adapt to their new country the best way and live their Expat life to the fullest.
 
 ## UX
-This project is still a tailored development for Denisse, who recently became a coach. She started her website on WordPress but struggled and did not get it the way she wanted. She did not have a clear objective of what she wanted to accomplish with her site.
-
+She started her website on WordPress but struggled and did not get it the way she wanted. She did not have a clear objective of what she wanted to accomplish with her site.
 Her original website check [here](https://github.com/Mlince79/WingsAndInspiration/blob/master/uxStrategy/Original%20home.jpg).
 
-While listening to her story and after little research on this second project, we came up with the idea to focus on the women who feel overwhelmed. There are hi statistics where we can see how some groups of women are burning out or experiencing anxiety. 
+Denisse has a personal call, and she is passionate about helping women. She wants to teach them to find their inner purpose. 
+Through Yoga exercises and meditation, she helps them to listen to something higher than their thoughts. 
 
-Denisse has a personal call, and she is passionate about helping women.
+Going through this process is like going through the process of becoming a butterfly. 
 
+Denisse will be close to every single woman all the way long, and the blog section's idea is to create a safe space to share and inspire other women. 
 
 ### Website design and style :
 - Approachable
@@ -23,24 +24,35 @@ Denisse has a personal call, and she is passionate about helping women.
 - Natural/Organic
 - Helpful
 
+The design is by Marcela Ruiz Barba, a professional illustrator https://www.instagram.com/marcelatepetonga/
+
 ## Features
+- The users will be able to book a session from the home website section and with all the other pages. 
+- Social media contacts will be present within all the sections. 
+- In the blog section users would be able to:
+    * Register
+    * Login
+        - Remember me option will be not working at the moment. 
+        - Forgot password would be not working later.
+    Once the user is login will be able to:
+        - Create a new post
+        - Update their account:
+        - Change the username, email, and default picture. 
 
-In terms of the scope, Denisse has a big vision with the website where she will be able to offer online bookings for her customers and allowed them to execute the online payment, among other features.
-The whole scope [here](https://github.com/Mlince79/WingsAndInspiration/blob/master/uxStrategy/Scope%20level.jpg)
+    The post will display up to 5 posts per page. 
 
-### Existing Features
+### Existing Sections
 
 The scope level in phase 2 will be:
 - Home - where the user can read a callout and book a first 30 min free session.
 - About Me - the user will get to know Denisse's biography.
-- My Coaching - the user will get to know about Denisse's Coaching (at the moment, the text is not real).
-- The blog is a section under construction. 
-- Events will display the map of Stockholm and will show the place and description of the coming events. 
+- My Coaching - the user will get to know about Denisse's Coaching.
+- The blog - is a space for women to share their journey.
 
 
-### Features Left to Implement
+### Sections Left to Implement
 
-- Blog - in this section, it is planned that every week will post relevant articles for Expat women.
+- Events - will describe whats a women's circle and, in the future, will display a calendar with events showing the map of Stockholm and the place.
 
 
 ## Technologies
@@ -48,17 +60,32 @@ The scope level in phase 2 will be:
 - CSS
 - Bootstrap (3.3.7)
 - Javascript
-- mapbox API
-- Chart.js
 - EmailJS.com
+- Flask
+    - Flask-Bcrypt
+    - Flask-Login
+    - Flask-Mail
+    - Flask-SQLAlchemy
+    - Flask-WTF
+- Python
+- itsdangerous
+- SQLAlchemy
+- WTForms
+
 
 ## Testing
-At the bottom of all the sections will be a button with a call to action a clear offer. They can request a free 30 min session leaving just their email and a short message about them. If the user tries to submit the contact form with an invalid email address, there will be an error noting the invalid email address.
-In the "About Me" section, they can read a bit about Denisse's background, and her photo. 
-In "My Coaching," they will learn more about who this coaching is for and what it is offering.  In this section, the user will be able to answer a question. At the end of the survey, the user will be able to see a graphic on big screens. 
-In "Events" will display the map of Stockholm and will show the place and description of the coming events. 
-
-They are also able to view Denisse's social media profiles via clicking on the icons in the footer. All links will open in a new tab using 'target="_blank"'
+HOME 
+    - Page responsive on laptop, ipad and phone considering a good layout of:
+        - javascript message
+        - navbar
+        - image
+        - social media
+        - book session button
+    - Funtionality of:
+        - book session button
+        - social media links 
+        - navbar links 
+All links will open in a new tab using 'target="_blank"'
 
 It is a responsive website.
 This site tested across multiple browsers (Chrome, Safari, Internet Explorer, FireFox) and on various mobile devices (iPhone 4, 5, 7: Chrome and Safari, iPad, Samsung Galaxy)

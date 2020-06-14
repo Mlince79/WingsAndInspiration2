@@ -79,4 +79,4 @@ class ResetPasswordForm(FlaskForm):
         'Password', validators=[DataRequired()])
     confirm_password = PasswordField(
         'Confirm password', validators=[DataRequired(), EqualTo('password')])
-    submit = SubmitField('Reset password')
+    submit = SubmitField('Not working at the moment')
