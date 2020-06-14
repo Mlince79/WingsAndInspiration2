@@ -27,6 +27,10 @@ Denisse will be close to every single woman all the way long, and the blog secti
 
 The design is by Marcela Ruiz Barba, a professional illustrator https://www.instagram.com/marcelatepetonga/
 
+![Iphone and Ipad](/static/images/iphoneipad.jpg)
+
+![Laptop](/static/images/laptop.jpg)
+
 ## Features
 - The users will be able to book a session from the home website section and with all the other pages. 
 - Social media contacts will be present within all the sections. 
@@ -116,12 +120,6 @@ This site is hosted using GitHub pages, deployed directly from the master branch
 7: allow about 1-2 minutes for GitHub to build the site, but you should have the link available there now.
 
 To run locally, the user can clone this repository directly into the editor of their choice by pasting git clone https://github.com/Mlince79/WingsAndInspiration.git into their terminal.
-
-## Credits
-Syed mohamed aladeen https://stackoverflow.com/questions/56800892/how-to-make-javascript-code-loop-to-repeat-text for the HOME animation loop
-I got the code from https://repl.it/@ArnavBulani/OutlandishEnragedTechnician for the quiz
-https://favpng.com/ For the background image in the quiz
-
 
 ## Credits
 Syed mohamed aladeen https://stackoverflow.com/questions/56800892/how-to-make-javascript-code-loop-to-repeat-text for the HOME animation loop
