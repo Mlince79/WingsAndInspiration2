@@ -450,17 +450,6 @@ label {
 
 @media (min-width: 992px) {
 
-    .callout-container {
-    background: url(https://raw.githubusercontent.com/Mlince79/WingsAndInspiration2/master/flaskblog/static/images/ipad_tepe.jpg);
-    background-repeat: no-repeat;
-    background-size:  auto;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    }
-
     img {
         display: none;
         width: 100%;
