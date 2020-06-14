@@ -81,10 +81,16 @@ HOME
         - image
         - social media
         - book session button
-    - Funtionality of:
+    - Funtionality of (this was check on all single page):
         - book session button
         - social media links 
         - navbar links 
+ABOUT ME 
+    - Display photo and text
+MY COACHING 
+    - 
+
+
 All links will open in a new tab using 'target="_blank"'
 
 It is a responsive website.
