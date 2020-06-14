@@ -18,6 +18,7 @@ Going through this process is like going through the process of becoming a butte
 
 Denisse will be close to every single woman all the way long, and the blog section's idea is to create a safe space to share and inspire other women. 
 
+
 ### Website design and style :
 - Approachable
 - Caring
@@ -74,6 +75,7 @@ The scope level in phase 2 will be:
 
 
 ## Testing
+
 HOME 
     - Page responsive on laptop, ipad and phone considering a good layout of:
         - javascript message
