@@ -27,9 +27,7 @@ Denisse will be close to every single woman all the way long, and the blog secti
 
 The design is by Marcela Ruiz Barba, a professional illustrator https://www.instagram.com/marcelatepetonga/
 
-![Iphone and Ipad](/static/images/iphoneipad.jpg)
-
-![Laptop](/static/images/laptop.jpg)
+![iphon and ipad](https://raw.githubusercontent.com/Mlince79/WingsAndInspiration2/master/flaskblog/static/images/iphoneipad.jpg)
 
 ## Features
 - The users will be able to book a session from the home website section and with all the other pages. 
