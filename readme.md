@@ -123,12 +123,15 @@ I got the code from https://repl.it/@ArnavBulani/OutlandishEnragedTechnician for
 https://favpng.com/ For the background image in the quiz
 
 
-### Content
-- The sections were planed based on the exercises done on the course.
+## Credits
+Syed mohamed aladeen https://stackoverflow.com/questions/56800892/how-to-make-javascript-code-loop-to-repeat-text for the HOME animation loop
+https://favpng.com/ For the image of the women's circle
+I followed all 7 tutorials of Corey Schafer in YouTube
+The ilustration the home is by Marcela Ruiz Barba.
 
 ### Media
 - The photos used in this site are from the owner of the project.
 
 ### Acknowledgments
 
-- I have received inspiration for this project, Denisse Olsson, Mentors and Tutors from Code Institute. Expericed developers as Syed Mohamed Aladeen, Arnav Bulani.
+- I have received inspiration for this project, Denisse Olsson, Mentors and Tutors from Code Institute. Expericed developers as Brian Macharia and Corey Schafer. 
